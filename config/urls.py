@@ -27,7 +27,7 @@ urlpatterns = [
         RedirectView.as_view(url="/blog/", permanent=False),
         name="home",
     ),
-    path("admin/", admin.site.urls),
+    path(settings.ADMIN_URL, admin.site.urls),
     path("account/", include("account.urls")),
     path("account/", include("django.contrib.auth.urls")),
     path("blog/", include("blog.urls")),
