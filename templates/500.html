@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Ошибка сервера — BookSpace{% endblock %}
+
+{% block content %}
+<section class="errorPage">
+    <span class="errorCode">500</span>
+    <h1>Что-то пошло не так</h1>
+    <p>
+        На сервере произошла непредвиденная ошибка.
+        Попробуйте зайти на страницу немного позже.
+    </p>
+    <a href="{% url 'blog:post_list' %}">Вернуться к публикациям</a>
+</section>
+{% endblock %}

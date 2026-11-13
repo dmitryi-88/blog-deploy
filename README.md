@@ -67,7 +67,7 @@ BookSpace — веб-приложение на Django для публикаци�
 3. Установить зависимости:
 
    ```bash
-   pip freeze > requirements.txt
+   pip install -r requirements.txt
    ```
 
 4. Создать файл `.env` в корне проекта. В нём должна быть переменная `SECRET_KEY`:

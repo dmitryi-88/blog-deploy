@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Страница не найдена — BookSpace{% endblock %}
+
+{% block content %}
+<section class="errorPage">
+    <span class="errorCode">404</span>
+    <h1>Страница не найдена</h1>
+    <p>
+        Возможно, страница была удалена, перемещена
+        или адрес указан неверно.
+    </p>
+    <a href="{% url 'blog:post_list' %}">Вернуться к публикациям</a>
+</section>
+{% endblock %}
